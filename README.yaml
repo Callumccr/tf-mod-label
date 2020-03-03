@@ -10,18 +10,34 @@ name: tf-mod-label
 # Canonical Git repo
 github_repo: https://github.com/Callumccr/tf-mod-label
 
-# # Badges to display
-# badges:
-#   - name: "Build Status"
-#     image: ""
-#     url: ""
+# Badges to display
+badges:
+  - name: "Build Status"
+    image: ""
+    url: ""
 
 # Short description of this project
 description: |-
-   Use `tf-mod-label` to implement a strict, and consistent naming convention, tagging blocks, and outputs for infrastructure resources.
+  Use the `tf-mod-label` Terraform module to implement a strict, and consistent naming convention, tagging blocks, and outputs for infrastructure resources.
 
+# External context to include
 include:
   - "docs/terraform.md"
+
+# Introduction to this project
+introduction: |-
+    A label follows the following convention: `{environment}-{namespace}-{name}-{attributes}`. The delimiter (e.g. `-`) is interchangeable.
+    The label items are all optional. So if you prefer the term `stage` to `environment` you can exclude environment and the label `id` will look like `{stage}-{namespace}-{name}-{attributes}`.
+    If attributes are excluded but `stage` and `environment` are included, `id` will look like `{environment}-{stage}-{namespace}-{name}`
+   
+    It's recommended to use one `terraform-null-label` module for every unique resource of a given resource type.
+    For example, if you have 10 instances, there should be 10 different labels.
+    However, if you have multiple different kinds of resources (e.g. instances, security groups, file systems, and elastic ips), then they can all share the same label assuming they are logically related.
+   
+    **NOTE:** The `null` refers to the primary Terraform [provider](https://www.terraform.io/docs/providers/null/index.html) used in this module.
+   
+    Releases of this module from `0.12.0` onward support `HCL2` and only work with Terraform 0.12 or newer. 
+    
 
 # How to use this module
 usage: |-
@@ -64,33 +80,16 @@ usage: |-
       }
     }
     ```
-  
-  ### Advanced Usage:
 
-   - Full advanced examples can be found on the unmodified upstream provider [here](https://github.com/cloudposse/terraform-null-label/blob/master/README.yaml)
-
-introduction: |-
-    A label follows the following convention: `{environment}-{namespace}-{name}-{attributes}`. The delimiter (e.g. `-`) is interchangeable.
-    The label items are all optional. So if you prefer the term `stage` to `environment` you can exclude environment and the label `id` will look like `{stage}-{namespace}-{name}-{attributes}`.
-    If attributes are excluded but `stage` and `environment` are included, `id` will look like `{environment}-{stage}-{namespace}-{name}`
-   
-    It's recommended to use one `terraform-null-label` module for every unique resource of a given resource type.
-    For example, if you have 10 instances, there should be 10 different labels.
-    However, if you have multiple different kinds of resources (e.g. instances, security groups, file systems, and elastic ips), then they can all share the same label assuming they are logically related.
-   
-    **NOTE:** The `null` refers to the primary Terraform [provider](https://www.terraform.io/docs/providers/null/index.html) used in this module.
-   
-    Releases of this module from `0.12.0` onward support `HCL2` and only work with Terraform 0.12 or newer. 
-    
 # How to get up and running with this project
 quickstart: |-
-  How to get up and running with this project:
-    1. First action
-    2. Second action
-    3. Third action 
 
-  ```hcl
-  ```
+# Simple and advanced examples of this project
+examples: |-
+  ### Advanced Examples:
+
+   - Full advanced examples can be found on the unmodified upstream provider [here](https://github.com/cloudposse/terraform-null-label/blob/master/README.yaml)
+  
 
 # Related projects
 related:
@@ -107,17 +106,18 @@ references:
     description: "Terraform Module to define a consistent naming convention by (namespace, environment, stage, name, [attributes])"
     url: "https://github.com/cloudposse/terraform-terraform-label"
 
+# Contributor information
 contributors:
   - name: "Callum Robertson"
     github: "callumccr"
     avator: https://media-exp2.licdn.com/dms/image/C5603AQHb_3oZMZA5YA/profile-displayphoto-shrink_200_200/0?e=1584576000&v=beta&
     homepage: https://www.linkedin.com/in/callum-robertson-1a55b6110/
-   
-# # Jira information
-# jira:
-#   - project:
-#     project_url:
-#     epic: 
-#     epic_url:
-#     user_story: 
-#     user_story_url:
+
+# Jira information
+jira:
+  - project:
+    project_url:
+    epic: 
+    epic_url:
+    user_story: 
+    user_story_url:

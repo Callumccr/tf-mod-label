@@ -43,14 +43,17 @@
 
 [![README Header][logo]][website]
 
-# tf-mod-label
+# tf-mod-label [![Build Status]()]()
 
 ## Module description
 
 
-Use `tf-mod-label` to implement a strict, and consistent naming convention, tagging blocks, and outputs for infrastructure resources.
+Use the `tf-mod-label` Terraform module to implement a strict, and consistent naming convention, tagging blocks, and outputs for infrastructure resources.
 
 
+
+
+Project: **[%!s(<nil>)](%!s(<nil>))** : [[%!s(<nil>)](%!s(<nil>))] | [[%!s(<nil>)](%!s(<nil>))] 
 
 
 
@@ -117,21 +120,11 @@ The below values shown in the usage of this module are purely representative, pl
   }
   ```
 
-### Advanced Usage:
-
- - Full advanced examples can be found on the unmodified upstream provider [here](https://github.com/cloudposse/terraform-null-label/blob/master/README.yaml)
-
 
 
 ## Quick Start
 
-How to get up and running with this project:
-  1. First action
-  2. Second action
-  3. Third action 
 
-```hcl
-```
 
 
 
