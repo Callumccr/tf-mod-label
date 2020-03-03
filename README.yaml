@@ -10,11 +10,11 @@ name: tf-mod-label
 # Canonical Git repo
 github_repo: https://github.com/Callumccr/tf-mod-label
 
-# Badges to display
-badges:
-  - name: "Build Status"
-    image: ""
-    url: ""
+# # Badges to display
+# badges:
+#   - name: "Build Status"
+#     image: ""
+#     url: ""
 
 # Short description of this project
 description: |-
