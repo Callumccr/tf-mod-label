@@ -43,7 +43,7 @@
 
 [![README Header][logo]][website]
 
-# tf-mod-label [![Build Status]()]()
+# tf-mod-label
 
 ## Module description
 
@@ -128,6 +128,11 @@ The below values shown in the usage of this module are purely representative, pl
 
 
 
+## Examples
+### Advanced Examples:
+
+ - Full advanced examples can be found on the unmodified upstream provider [here](https://github.com/cloudposse/terraform-null-label/blob/master/README.yaml)
+
 
 ## Providers
 
@@ -202,7 +207,13 @@ File a Github [issue](https://github.com/Callumccr/tf-mod-label/issues), or mess
 
 
   [callumccr_homepage]: https://www.linkedin.com/in/callum-robertson-1a55b6110/
-  [callumccr_avatar]: https://img.cloudposse.com/150x150/https://github.com/callumccr.png
+
+  [callumccr_avatar]: https://media-exp1.licdn.com/dms/image/C5603AQHb_3oZMZA5YA/profile-displayphoto-shrink_200_200/0?e=1588809600&v=beta&t=5QQQAlHrm1od5fQNZwdjOtbZWvsGcgNBqFRhZWgnPx4
+
+
+
+
+---
 
 
 

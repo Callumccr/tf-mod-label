@@ -91,12 +91,6 @@ examples: |-
    - Full advanced examples can be found on the unmodified upstream provider [here](https://github.com/cloudposse/terraform-null-label/blob/master/README.yaml)
   
 
-# Related projects
-related:
-  - name:
-    description:
-    url:
-
 # Project feferences
 references:
   - name: "cloudposse/terraform-null-label"
@@ -106,18 +100,26 @@ references:
     description: "Terraform Module to define a consistent naming convention by (namespace, environment, stage, name, [attributes])"
     url: "https://github.com/cloudposse/terraform-terraform-label"
 
+# Related projects
+related:
+  - name:
+    description:
+    url:
+
 # Contributor information
 contributors:
   - name: "Callum Robertson"
     github: "callumccr"
-    avator: https://media-exp2.licdn.com/dms/image/C5603AQHb_3oZMZA5YA/profile-displayphoto-shrink_200_200/0?e=1584576000&v=beta&
+    avatar: https://media-exp1.licdn.com/dms/image/C5603AQHb_3oZMZA5YA/profile-displayphoto-shrink_200_200/0?e=1588809600&v=beta&t=5QQQAlHrm1od5fQNZwdjOtbZWvsGcgNBqFRhZWgnPx4
     homepage: https://www.linkedin.com/in/callum-robertson-1a55b6110/
 
 # Jira information
 jira:
   - project:
     project_url:
-    epic: 
+    epic:
     epic_url:
-    user_story: 
+    user_story:
     user_story_url:
+
+---
